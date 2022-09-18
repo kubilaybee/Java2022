@@ -15,5 +15,13 @@ public class Main {
             i+=2;
         }
         System.out.println("The whileLoop is over..");
+
+        // do-while
+        i = 0;
+        do{
+            System.out.println(i);
+            i+=2;
+        } while (i<10);
+        System.out.println("do-whileLoop is over");
     }
 }
