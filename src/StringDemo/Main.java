@@ -26,5 +26,7 @@ public class Main {
         }
         System.out.println(dailyMessage.toLowerCase());
         System.out.println(dailyMessage.toUpperCase());
+        // the trim delete first and end space
+        System.out.println(dailyMessage.trim());
     }
 }
