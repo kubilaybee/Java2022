@@ -2,14 +2,10 @@ package ClassesWithAttributes;
 
 public class Main {
     public static void main(String[] args){
-        Product product = new Product();
-        product.id = 1;
-        product.name = "Product";
-        product.description = "Product Description";
-        product.price = 15.59;
-        product.stockAmount = 2;
+        Product product = new Product(1,"Product","Product Description",15.59,2);
 
         ProductManager productManager = new ProductManager();
         productManager.add(product);
+        productManager.add(product.getId(),product.getName(),product.getDescription(),product.getPrice(),product.getStockAmount());
     }
 }
