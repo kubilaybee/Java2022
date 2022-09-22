@@ -6,6 +6,8 @@ public class Main {
 
         ProductManager productManager = new ProductManager();
         productManager.add(product);
+        // set
+        product.setPrice(199.99);
         productManager.add(product.getId(),product.getName(),product.getDescription(),product.getPrice(),product.getStockAmount());
     }
 }
