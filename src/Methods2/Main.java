@@ -2,13 +2,23 @@ package Methods2;
 
 public class Main {
     public static void main(String[] args){
-        //void methods
+        // methods
         addUser();
         deleteUser();
         updateUser();
         System.out.println(sumNumbers(2,3));
         System.out.println(giveNumber());
         System.out.println(giveText());
+        System.out.println(sum(3,4,5,6,7));
+    }
+
+    // Variable Arguments => numbers arr
+    public static int sum(int... numbers){
+        int sum = 0;
+        for (int number : numbers){
+            sum += number;
+        }
+        return sum;
     }
 
     public static void addUser(){
