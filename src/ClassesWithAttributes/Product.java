@@ -8,7 +8,7 @@ public class Product {
     private double price;
     private int stockAmount;
 
-    // encapsulation
+    // encapsulation || constructor
     public Product(int id, String name, String description, double price, int stockAmount) {
         this.id = id;
         this.name = name;
